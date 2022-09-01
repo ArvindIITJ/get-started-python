@@ -12,7 +12,7 @@ db = None
 
 if 'VCAP_SERVICES' in os.environ:
     vcap = json.loads(os.getenv('VCAP_SERVICES'))
-    print('Found VCAP_SERVICES')
+    print('Found VCAP_SERVICES!!!')
     if 'cloudantNoSQLDB' in vcap:
         creds = vcap['cloudantNoSQLDB'][0]['credentials']
         user = creds['username']
